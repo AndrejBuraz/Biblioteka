@@ -1,0 +1,12 @@
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\bin\Debug\BibliotekaProjekt.exe.config
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\bin\Debug\BibliotekaProjekt.exe
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\bin\Debug\BibliotekaProjekt.pdb
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.csproj.AssemblyReference.cache
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.csproj.SuggestedBindingRedirects.cache
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.Form1.resources
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.Properties.Resources.resources
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.csproj.GenerateResource.cache
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.csproj.CoreCompileInputs.cache
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.exe
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.pdb
+C:\Users\ucenik\source\repos\BibliotekaProjekt\BibliotekaProjekt\obj\Debug\BibliotekaProjekt.KnjigeUnos.resources
