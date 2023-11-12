@@ -32,5 +32,17 @@ namespace BibliotekaProjekt
             KnjigeUnos novaForma = new KnjigeUnos();
             novaForma.Show();
         }
+
+        private void btnKoUnos_Click(object sender, EventArgs e)
+        {
+            KorisnikUnos novaForma = new KorisnikUnos();
+            novaForma.Show();
+        }
+
+        private void btnEvZad_Click(object sender, EventArgs e)
+        {
+            UnosEvidencija novaForma = new UnosEvidencija();
+            novaForma.Show();
+        }
     }
 }

@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnKnUnos = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnKnPopis = new System.Windows.Forms.Button();
+            this.btnKoUnos = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnKnBrisanje = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnKoBrisanje = new System.Windows.Forms.Button();
+            this.btnKoPopis = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnEvRaz = new System.Windows.Forms.Button();
+            this.btnEvPov = new System.Windows.Forms.Button();
+            this.btnEvZad = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.groupBox1.SuspendLayout();
@@ -60,31 +60,32 @@
             this.btnKnUnos.UseVisualStyleBackColor = false;
             this.btnKnUnos.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnKnPopis
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(309, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 34);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Popis";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnKnPopis.BackColor = System.Drawing.Color.Yellow;
+            this.btnKnPopis.Location = new System.Drawing.Point(309, 35);
+            this.btnKnPopis.Name = "btnKnPopis";
+            this.btnKnPopis.Size = new System.Drawing.Size(75, 34);
+            this.btnKnPopis.TabIndex = 1;
+            this.btnKnPopis.Text = "Popis";
+            this.btnKnPopis.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnKoUnos
             // 
-            this.button3.BackColor = System.Drawing.Color.LawnGreen;
-            this.button3.Location = new System.Drawing.Point(6, 38);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 34);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Unos";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnKoUnos.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnKoUnos.Location = new System.Drawing.Point(6, 38);
+            this.btnKoUnos.Name = "btnKoUnos";
+            this.btnKoUnos.Size = new System.Drawing.Size(75, 34);
+            this.btnKoUnos.TabIndex = 2;
+            this.btnKoUnos.Text = "Unos";
+            this.btnKoUnos.UseVisualStyleBackColor = false;
+            this.btnKoUnos.Click += new System.EventHandler(this.btnKoUnos_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button8);
+            this.groupBox1.Controls.Add(this.btnKnBrisanje);
             this.groupBox1.Controls.Add(this.btnKnUnos);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btnKnPopis);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox1.Location = new System.Drawing.Point(12, 303);
             this.groupBox1.Name = "groupBox1";
@@ -93,11 +94,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Knjige";
             // 
+            // btnKnBrisanje
+            // 
+            this.btnKnBrisanje.BackColor = System.Drawing.Color.Red;
+            this.btnKnBrisanje.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnKnBrisanje.Location = new System.Drawing.Point(156, 35);
+            this.btnKnBrisanje.Name = "btnKnBrisanje";
+            this.btnKnBrisanje.Size = new System.Drawing.Size(86, 34);
+            this.btnKnBrisanje.TabIndex = 2;
+            this.btnKnBrisanje.Text = "Brisanje";
+            this.btnKnBrisanje.UseVisualStyleBackColor = false;
+            this.btnKnBrisanje.Click += new System.EventHandler(this.button8_Click);
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btnKoBrisanje);
+            this.groupBox2.Controls.Add(this.btnKoPopis);
+            this.groupBox2.Controls.Add(this.btnKoUnos);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox2.Location = new System.Drawing.Point(12, 412);
             this.groupBox2.Name = "groupBox2";
@@ -107,21 +120,32 @@
             this.groupBox2.Text = "Korisnici";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // button4
+            // btnKoBrisanje
             // 
-            this.button4.BackColor = System.Drawing.Color.Yellow;
-            this.button4.Location = new System.Drawing.Point(309, 38);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 34);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Popis";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnKoBrisanje.BackColor = System.Drawing.Color.Red;
+            this.btnKoBrisanje.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnKoBrisanje.Location = new System.Drawing.Point(156, 38);
+            this.btnKoBrisanje.Name = "btnKoBrisanje";
+            this.btnKoBrisanje.Size = new System.Drawing.Size(86, 34);
+            this.btnKoBrisanje.TabIndex = 4;
+            this.btnKoBrisanje.Text = "Brisanje";
+            this.btnKoBrisanje.UseVisualStyleBackColor = false;
+            // 
+            // btnKoPopis
+            // 
+            this.btnKoPopis.BackColor = System.Drawing.Color.Yellow;
+            this.btnKoPopis.Location = new System.Drawing.Point(309, 38);
+            this.btnKoPopis.Name = "btnKoPopis";
+            this.btnKoPopis.Size = new System.Drawing.Size(75, 34);
+            this.btnKoPopis.TabIndex = 3;
+            this.btnKoPopis.Text = "Popis";
+            this.btnKoPopis.UseVisualStyleBackColor = false;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Controls.Add(this.btnEvRaz);
+            this.groupBox3.Controls.Add(this.btnEvPov);
+            this.groupBox3.Controls.Add(this.btnEvZad);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox3.Location = new System.Drawing.Point(12, 522);
             this.groupBox3.Name = "groupBox3";
@@ -130,59 +154,37 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Evidencija";
             // 
-            // button5
+            // btnEvRaz
             // 
-            this.button5.BackColor = System.Drawing.Color.LawnGreen;
-            this.button5.Location = new System.Drawing.Point(6, 37);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 34);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Zaduživanje";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnEvRaz.BackColor = System.Drawing.Color.Red;
+            this.btnEvRaz.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEvRaz.Location = new System.Drawing.Point(140, 37);
+            this.btnEvRaz.Name = "btnEvRaz";
+            this.btnEvRaz.Size = new System.Drawing.Size(121, 34);
+            this.btnEvRaz.TabIndex = 2;
+            this.btnEvRaz.Text = "Razduživanje";
+            this.btnEvRaz.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnEvPov
             // 
-            this.button6.BackColor = System.Drawing.Color.Yellow;
-            this.button6.Location = new System.Drawing.Point(286, 37);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(98, 34);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Povjest";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnEvPov.BackColor = System.Drawing.Color.Yellow;
+            this.btnEvPov.Location = new System.Drawing.Point(286, 37);
+            this.btnEvPov.Name = "btnEvPov";
+            this.btnEvPov.Size = new System.Drawing.Size(98, 34);
+            this.btnEvPov.TabIndex = 1;
+            this.btnEvPov.Text = "Povjest";
+            this.btnEvPov.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnEvZad
             // 
-            this.button7.BackColor = System.Drawing.Color.Red;
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(140, 37);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(121, 34);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Razduživanje";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Red;
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(156, 35);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(86, 34);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Brisanje";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Red;
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Location = new System.Drawing.Point(156, 38);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(86, 34);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Brisanje";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnEvZad.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnEvZad.Location = new System.Drawing.Point(6, 37);
+            this.btnEvZad.Name = "btnEvZad";
+            this.btnEvZad.Size = new System.Drawing.Size(110, 34);
+            this.btnEvZad.TabIndex = 0;
+            this.btnEvZad.Text = "Zaduživanje";
+            this.btnEvZad.UseVisualStyleBackColor = false;
+            this.btnEvZad.Click += new System.EventHandler(this.btnEvZad_Click);
             // 
             // pictureBox1
             // 
@@ -215,7 +217,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Clein Books System";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -228,17 +230,17 @@
         #endregion
 
         private System.Windows.Forms.Button btnKnUnos;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnKnPopis;
+        private System.Windows.Forms.Button btnKoUnos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnKnBrisanje;
+        private System.Windows.Forms.Button btnKoBrisanje;
+        private System.Windows.Forms.Button btnKoPopis;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnEvRaz;
+        private System.Windows.Forms.Button btnEvPov;
+        private System.Windows.Forms.Button btnEvZad;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStrip toolStrip1;
     }
