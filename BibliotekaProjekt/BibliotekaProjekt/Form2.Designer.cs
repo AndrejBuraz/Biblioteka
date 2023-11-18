@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KnjigeUnos));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxAutor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxNaslov = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxIzdavac = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxKolicina = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxID
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxID.Location = new System.Drawing.Point(12, 49);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxID.TabIndex = 0;
             // 
             // label1
             // 
@@ -72,12 +72,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Autor";
             // 
-            // textBox2
+            // textBoxAutor
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 111);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.textBoxAutor.Location = new System.Drawing.Point(12, 111);
+            this.textBoxAutor.Name = "textBoxAutor";
+            this.textBoxAutor.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAutor.TabIndex = 3;
             // 
             // label3
             // 
@@ -89,12 +89,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Naslov";
             // 
-            // textBox3
+            // textBoxNaslov
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 5;
+            this.textBoxNaslov.Location = new System.Drawing.Point(12, 172);
+            this.textBoxNaslov.Name = "textBoxNaslov";
+            this.textBoxNaslov.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNaslov.TabIndex = 5;
             // 
             // label4
             // 
@@ -106,12 +106,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Izdavač";
             // 
-            // textBox4
+            // textBoxIzdavac
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 226);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.textBoxIzdavac.Location = new System.Drawing.Point(12, 226);
+            this.textBoxIzdavac.Name = "textBoxIzdavac";
+            this.textBoxIzdavac.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIzdavac.TabIndex = 7;
             // 
             // label5
             // 
@@ -123,12 +123,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Količina";
             // 
-            // textBox5
+            // textBoxKolicina
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 283);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 9;
+            this.textBoxKolicina.Location = new System.Drawing.Point(12, 283);
+            this.textBoxKolicina.Name = "textBoxKolicina";
+            this.textBoxKolicina.Size = new System.Drawing.Size(100, 20);
+            this.textBoxKolicina.TabIndex = 9;
             // 
             // pictureBox1
             // 
@@ -150,6 +150,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Unesi";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -162,6 +163,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Briši";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // KnjigeUnos
             // 
@@ -172,16 +174,16 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBoxKolicina);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxIzdavac);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxNaslov);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxAutor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxID);
             this.Name = "KnjigeUnos";
             this.Text = "Unos knjige";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -192,16 +194,16 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxAutor;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxNaslov;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxIzdavac;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxKolicina;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

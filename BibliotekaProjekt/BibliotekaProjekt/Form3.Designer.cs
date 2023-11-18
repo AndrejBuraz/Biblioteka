@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KorisnikUnos));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxIme = new System.Windows.Forms.TextBox();
+            this.textBoxPrezime = new System.Windows.Forms.TextBox();
+            this.textBoxAdresa = new System.Windows.Forms.TextBox();
+            this.textBoxBrojTel = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,45 +47,45 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxID
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxID.Location = new System.Drawing.Point(12, 47);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(100, 20);
+            this.textBoxID.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox2
+            // textBoxIme
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.textBoxIme.Location = new System.Drawing.Point(12, 90);
+            this.textBoxIme.Name = "textBoxIme";
+            this.textBoxIme.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIme.TabIndex = 2;
             // 
-            // textBox3
+            // textBoxPrezime
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 150);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
+            this.textBoxPrezime.Location = new System.Drawing.Point(12, 150);
+            this.textBoxPrezime.Name = "textBoxPrezime";
+            this.textBoxPrezime.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrezime.TabIndex = 3;
             // 
-            // textBox4
+            // textBoxAdresa
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 202);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 4;
+            this.textBoxAdresa.Location = new System.Drawing.Point(12, 202);
+            this.textBoxAdresa.Name = "textBoxAdresa";
+            this.textBoxAdresa.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAdresa.TabIndex = 4;
             // 
-            // textBox5
+            // textBoxBrojTel
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 261);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 5;
+            this.textBoxBrojTel.Location = new System.Drawing.Point(12, 261);
+            this.textBoxBrojTel.Name = "textBoxBrojTel";
+            this.textBoxBrojTel.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBrojTel.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -157,6 +157,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Unesi";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -169,6 +170,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "Briši";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // KorisnikUnos
             // 
@@ -184,11 +186,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxBrojTel);
+            this.Controls.Add(this.textBoxAdresa);
+            this.Controls.Add(this.textBoxPrezime);
+            this.Controls.Add(this.textBoxIme);
+            this.Controls.Add(this.textBoxID);
             this.Name = "KorisnikUnos";
             this.Text = "Unos korisnika";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -199,12 +201,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxIme;
+        private System.Windows.Forms.TextBox textBoxPrezime;
+        private System.Windows.Forms.TextBox textBoxAdresa;
+        private System.Windows.Forms.TextBox textBoxBrojTel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
