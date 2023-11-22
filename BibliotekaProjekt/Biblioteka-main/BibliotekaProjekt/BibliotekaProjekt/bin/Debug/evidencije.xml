@@ -1,0 +1,5 @@
+<Evidencije>
+  <evidencija korisnikID="2" knjigaID="2" radnja="podizanje" podignuto="22.11.2023. 19:19:32" vratiti="22.11.2023. 19:19:32" />
+  <evidencija korisnikID="2" knjigaID="3" radnja="vraćanje" vraceno="22.11.2023. 0:00:00" />
+  <evidencija korisnikID="1" knjigaID="15" radnja="podizanje" podignuto="22.11.2023. 19:34:48" vratiti="29.11.2023. 19:34:48" />
+</Evidencije>
